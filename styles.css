@@ -8,8 +8,8 @@ body {
     max-width: 400px;
     margin: auto;
     padding: 50px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 10px solid #ccc;
+    border-radius: 50px;
     background-color: #f9f9f9;
 }
 
@@ -39,3 +39,4 @@ button:hover {
     margin-top: 15px;
     font-size: 18px;
 }
+

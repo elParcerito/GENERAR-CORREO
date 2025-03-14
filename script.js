@@ -16,10 +16,20 @@ function generarCorreo() {
     let inicialNombre = nombre.charAt(0);
     let correo = `${inicialNombre}.${apellido1}${apellido2}@liceorbl.cl`;
 
-    document.getElementById("resultado").innerHTML = `Correo generado: <strong>${correo}</strong>`;
+    document.getElementById("resultado").innerHTML = `Correo generado: <strong>${correo}</strong><br><span id="mensaje-personalizado"></span>`;
+
+    document.getElementById("mensaje-personalizado").innerText = "La contraseña debera ser dicha por el profesor";
+
+    setTimeout(() => document.getElementById("resultado").style.opacity = 1, 100);
+
+
+    // Copiar correo al portapapeles
+    navigator.clipboard.writeText(correo);
 }
 
 // Función para eliminar tildes y reemplazar "ñ" por "n"
 function limpiarTexto(texto) {
     return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ñ/g, "n");
 }
+
+
