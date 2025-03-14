@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Correos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Generador de Correos</h2>
+        <label for="nombre">Primer Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ej: Edgar">
+        
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" placeholder="Ej: Soto">
+        
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" placeholder="Ej: Contreras">
+        
+        <button onclick="generarCorreo()">Generar Correo</button>
+        
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
