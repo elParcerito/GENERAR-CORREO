@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Correo Institucional</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <header>
+      <h1>Generador de Correo Institucional</h1>
+      <button id="modoBtn" onclick="toggleModo()">🌙</button>
+    </header>
+
+    <main class="container">
+      <form id="correoForm" onsubmit="event.preventDefault(); generarCorreo();">
+        <label for="nombre">Primer Nombre</label>
+        <input type="text" id="nombre" placeholder="Ej: Edgar" required />
+
+        <label for="apellido1">Primer Apellido</label>
+        <input type="text" id="apellido1" placeholder="Ej: Soto" required />
+
+        <label for="apellido2">Segundo Apellido</label>
+        <input type="text" id="apellido2" placeholder="Ej: Contreras" required />
+
+        <button type="submit" class="primary-btn">🚀 Generar Correo</button>
+
+        <a href="https://workspace.google.com/intl/es-419/gmail/" target="_blank">
+          <button type="button" class="secondary-btn">✉️ Ir a Gmail</button>
+        </a>
+      </form>
+
+      <div id="resultado"></div>
+    </main>
+
+    <footer>
+      <p>© 2025 Liceo RBL — Portal Estudiantil</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
